@@ -2,7 +2,7 @@
 
 namespace IMI\SVGProductImages;
 
-use Magento\Framework\File\Uploader;
+use Magento\MediaStorage\Model\File\Uploader;
 
 class AllowSVGUploader extends Uploader
 {
