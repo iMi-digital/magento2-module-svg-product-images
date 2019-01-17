@@ -1,3 +1,6 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-    <preference for="Magento\MediaStorage\Model\File\Uploader" type="IMI\SVGProductImages\AllowSVGUploader" />
+    <type name="Magento\Framework\File\Uploader">
+        <plugin sortOrder="1" name="iMIOptionsToOrderInterfaceUploader"
+                type="IMI\SVGProductImages\Plugin\File\UploaderPlugin"/>
+    </type>
 </config>
