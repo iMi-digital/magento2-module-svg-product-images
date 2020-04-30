@@ -18,5 +18,12 @@
                 </adapters>
             </image>
         </dev>
+        <general>
+            <file>
+                <protected_extensions>
+                    <svg>svgIsAllowed</svg>
+                </protected_extensions>
+            </file>
+        </general>
     </default>
 </config>
