@@ -31,7 +31,7 @@ class SVGImageMagickAdapter extends ImageMagick
      */
     public function validateUploadFile($filePath)
     {
-        if ($this->mime->getMimeType($filePath) === 'svg') {
+        if ($this->mime->getMimeType($filePath) === 'image/svg+xml') {
             return true;
         }
         return parent::validateUploadFile($filePath);
