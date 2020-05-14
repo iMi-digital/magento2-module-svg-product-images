@@ -3,5 +3,4 @@
         <plugin sortOrder="1" name="iMIOptionsToOrderInterfaceUploader"
                 type="IMI\SVGProductImages\Plugin\File\UploaderPlugin"/>
     </type>
-    <preference for="Magento\Framework\Image\Adapter\AbstractAdapter" type="IMI\SVGProductImages\Model\AbstractAdapter"/>
 </config>
