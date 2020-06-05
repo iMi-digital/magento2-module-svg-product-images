@@ -31,7 +31,8 @@ class SVGImageMagickAdapter extends ImageMagick
      */
     public function validateUploadFile($filePath)
     {
-        if ($this->mime->getMimeType($filePath) === 'image/svg+xml') {
+        //Bug in getMimeType method found: Returns 'image/svg' in case of no file extension. See \Magento\Framework\File\Mime::getMimeType
+        if ($this->mime->getMimeType($filePath) === 'image/svg+xml' || $this->mime->getMimeType($filePath) === 'image/svg') {
             return true;
         }
         return parent::validateUploadFile($filePath);
