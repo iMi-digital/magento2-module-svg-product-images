@@ -14,8 +14,8 @@ class SVGImageMagickAdapter extends ImageMagick
 
     public function __construct(
         \Magento\Framework\Filesystem $filesystem,
-        \Psr\Log\LoggerInterface $logger, array $data = [],
-        Mime $mime
+        Mime $mime,
+        \Psr\Log\LoggerInterface $logger, array $data = []
     )
     {
         parent::__construct($filesystem, $logger, $data);
